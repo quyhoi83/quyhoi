@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi-VN">
+<head>
+<title>404 Error</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="Quy hoi, Hoi dong nien quy hoi, Lang lac tho, Quy hoi 1983, Hoi dong nien 1983">
+<meta name="Description" content="Hoi dong nien quy hoi 1983.">
+<link rel="canonical" href="https://quyhoi.com" />
+<meta property="og:image" content="https://quyhoi.com/static/images/about.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="460">
+<meta property="og:image:height" content="406">
+<meta property="og:description" content="Hoi dong nien quy hoi 1983.">
+<link rel="icon" href="https://quyhoi.com/static/images/favico.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="https://quyhoi.com/static/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://quyhoi.com/static/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://quyhoi.com/static/images/favicon-16x16.png">
+<link rel="manifest" href="https://quyhoi.com/site.webmanifest">
+<link rel="mask-icon" href="https://quyhoi.com/safari-pinned-tab.svg" color="#04aa6d">
+<meta name="msapplication-TileColor" content="#00a300">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="https://quyhoi.com/static/stylesheets/default.css?v=1.0">
+<link rel="stylesheet" href="https://quyhoi.com/static/stylesheets/responsive.css?v=1.0">
+<link rel="stylesheet" href="https://quyhoi.com/static/stylesheets/custom.css?v=1.0">
+<script type="text/javascript" src="https://quyhoi.com/static/javascript/jquery.min.js"></script>
+</head>
+<body>
+	<header class="main_header">
+        <div class="header_wrapper">
+        	<div class="logo_sect">
+                <a href="/" class="logo"><img src="https://quyhoi.com/static/images/logo.png" alt="Hội đồng niên Quý Hợi" class="logo_def"><img src="https://quyhoi.com/static/images/retina/logo.png" alt="Hội đồng niên Quý Hợi" class="logo_retina"></a>
+            </div>                       
+            <div class="header_rp">
+                <nav>
+                    <div class="menu-main-menu-container">
+                    	<ul id="menu-main-menu" class="menu">
+                        	<li class="current-menu-parent menu-item-has-children">
+                            	<a href="https://quyhoi.com/"><span>Home</span></a>                          
+                            </li>
+                            <li class="menu-item-has-children">
+                            	<a href="https://quyhoi.com/gallery.html"><span>Gallery</span></a>                         
+                            </li>
+                            <li class="menu-item-has-children">
+                            	<a href="javascript:void(0);"><span>Blog</span></a>
+                                        <ul class="sub-menu">
+                                            <li><a href="https://quyhoi.com/hoat-dong.html"><span>Hoạt động</span></a></li>
+                                            <li><a href="https://quyhoi.com/chuc-tho.html"><span>Chúc thọ</span></a></li>
+                                        </ul>								
+                            </li>
+                            <li class="menu-item-has-children">
+                            	<a href="https://quyhoi.com/member.html"><span>Member</span></a>                                
+                            </li>								
+                            <li class="menu-item-has-children">
+                            	<a href="https://quyhoi.com/about.html"><span>About</span></a>                                
+                            </li>
+                            <li class="menu-item-has-children">
+                            	<a href="https://quyhoi.com/contacts.html"><span>Contact</span></a>
+                            </li>                        
+                        </ul>
+                    </div>
+                </nav>
+			</div>
+            <div class="clear"></div>
+        </div>
+    </header>   
+    <div class="wrapper404">
+        <div class="container404">
+        	<h1 class="title404">404 Error</h1>
+            <div class="clear"></div>
+        </div>        
+    </div>
+    <div class="custom_bg img_bg bg1"></div>	       
+	<div class="content_bg"></div>
+    <script type="text/javascript" src="https://quyhoi.com/static/javascript/modules.js?v=1.0"></script>
+	<script type="text/javascript" src="https://quyhoi.com/static/javascript/default.js?v=1.0"></script> 
+    <script>
+		jQuery(document).ready(function(){
+			"use strict";
+			jQuery('.wrapper404').css('margin-top', -1*(jQuery('.wrapper404').height()/2)+(jQuery('header.main_header').height()-30)/2);
+		});
+		jQuery(window).resize(function(){
+			"use strict";
+			jQuery('.wrapper404').css('margin-top', -1*(jQuery('.wrapper404').height()/2)+(jQuery('header.main_header').height()-30)/2);
+		});
+	</script>
+</body>
+</html>
