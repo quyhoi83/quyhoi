@@ -1,27 +1,5 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^www.quyhoi.com [NC]
 RewriteRule ^(.*)$ http://quyhoi.com/$1 [L,R=301,NC]
-Redirect 301 /index.php /
-Redirect 301 /hoat-dong /hoat-dong.html
-Redirect 301 /hoat-dong/ /hoat-dong.html
-Redirect 301 /thanh-vien.html /member.html
-Redirect 301 /contact.html /contacts.html
-Redirect 301 /lien-he /contacts.html
-Redirect 301 /lien-he/ /contacts.html
-Redirect 301 /hoat-dong/chuc-tho-bo-me.html /chuc-tho.html
-Redirect 301 /hoat-dong/dang-le-vao-dinh-tiet-xuan-2021.html /hop-mat-xuan-2021.html
-Redirect 301 /hoat-dong/dang-le-vao-dinh-tiet-xuan-2020.html /hop-mat-xuan-2020.html
-Redirect 301 /hoat-dong/dang-le-vao-dinh-tiet-xuan-2019.html /hop-mat-xuan-2019.html
-Redirect 301 /hoat-dong/dang-le-vao-dinh-tiet-xuan-2018.html /hop-mat-xuan-2018.html
-Redirect 301 /hoat-dong/dang-le-vao-dinh-tiet-xuan-2017.html /hop-mat-xuan-2017.html
-Redirect 301 /hoat-dong/dang-le-vao-dinh-tiet-xuan-2016.html /hop-mat-xuan-2016.html
-Redirect 301 /hoat-dong/dang-le-vao-dinh-tiet-xuan-2015.html /hop-mat-xuan-2015.html
-Redirect 301 /hoat-dong/dang-le-vao-dinh-tiet-xuan-2014.html /hop-mat-xuan-2014.html
-Redirect 301 /hoat-dong/dang-le-vao-dinh-tiet-xuan-2013.html /hop-mat-xuan-2013.html
-Redirect 301 /hoat-dong/dang-le-vao-dinh-tiet-xuan-2012.html /hop-mat-xuan-2012.html
-Redirect 301 /hoat-dong/dang-le-vao-dinh-tiet-thu-2022.html /hop-mat-thu-2022.html
-Redirect 301 /hoat-dong/dang-le-vao-dinh-tiet-thu-2020.html /hop-mat-thu-2020.html
-Redirect 301 /hoat-dong/dang-le-vao-dinh-tiet-thu-2019.html /hop-mat-thu-2019.html
-Redirect 301 /hoat-dong/dang-le-vao-dinh-tiet-thu-2018.html /hop-mat-thu-2018.html
-Redirect 301 /hoat-dong/dang-le-vao-dinh-tiet-thu-2016.html /hop-mat-thu-2016.html
+
 
