@@ -5,165 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hội Đồng Niên Quý Hợi 1983 - Kỷ Niệm Gắn Kết</title>
     
-    <!-- Ưu tiên tải ảnh nền siêu nhẹ để web hiện lên ngay lập tức -->
     <link rel="preload" as="image" href="about_optimized.webp">
+    <meta name="description" content="Trang thông tin chính thức của Hội Đồng Niên Quý Hợi 1983.">
     
-    <meta name="description" content="Trang thông tin chính thức của Hội Đồng Niên Quý Hợi 1983. Nơi lưu giữ những kỷ niệm, hình ảnh và thông báo các sự kiện thường niên như Tiết Xuân, Tiết Thu.">
-    
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     
+    <!-- NHÚNG FILE DỮ LIỆU SỰ KIỆN Ở ĐÂY -->
+    <script src="events_data.js"></script>
+    
     <style>
-        /* --- CSS TỐI ƯU HÓA CHUNG --- */
-        :root {
-            --primary-color: #8B0000; /* Đỏ đô truyền thống */
-            --secondary-color: #DAA520; /* Vàng đồng */
-            --bg-light: #f9f9f9;
-            --text-dark: #333;
-        }
-
+        :root { --primary-color: #8B0000; --secondary-color: #DAA520; --bg-light: #f9f9f9; --text-dark: #333; }
         * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            color: var(--text-dark);
-            line-height: 1.6;
-            background-color: var(--bg-light);
-        }
-
+        body { font-family: 'Roboto', sans-serif; color: var(--text-dark); line-height: 1.6; background-color: var(--bg-light); }
         h1, h2, h3 { font-family: 'Merriweather', serif; }
 
-        /* Header & Navigation */
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
+        header { background-color: var(--primary-color); color: white; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 10px 5%; max-width: 1200px; margin: 0 auto; position: relative; }
 
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 5%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        .logo { display: flex; align-items: center; }
+        .logo img { height: 75px; width: auto; display: block; transition: transform 0.3s; background: transparent; border: none; padding: 0; margin: 0; }
+        .logo img:hover { transform: scale(1.15); filter: drop-shadow(0 0 8px rgba(218, 165, 32, 0.6)); }
 
-        /* --- Canh chỉnh ảnh Logo (Đã dùng ảnh PNG/WebP tối ưu, trong suốt) --- */
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo img {
-            height: 75px; /* Phóng to logo sắc nét */
-            width: auto;
-            display: block;
-            transition: transform 0.3s;
-            background: transparent; 
-            border: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .logo img:hover {
-            transform: scale(1.15); /* Phóng to 15% khi di chuột vào */
-            filter: drop-shadow(0 0 8px rgba(218, 165, 32, 0.6)); /* Hiệu ứng tỏa sáng vàng kim */
-        }
-
-        .nav-links { list-style: none; display: flex; gap: 20px; }
-        .nav-links a {
-            color: white; text-decoration: none; font-weight: 500; transition: color 0.3s;
-        }
+        .nav-links { list-style: none; display: flex; gap: 20px; transition: 0.3s ease-in-out; }
+        .nav-links a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s; display: block; padding: 10px; }
         .nav-links a:hover { color: var(--secondary-color); }
+        .mobile-menu-btn { display: none; background: none; border: none; color: white; font-size: 2rem; cursor: pointer; }
 
-        /* Hero Banner */
-        .hero {
-            height: 100vh;
-            /* Dùng ảnh đã xóa chữ dưới góc, đã nén WebP */
-            background: linear-gradient(rgba(139, 0, 0, 0.0), rgba(139, 0, 0, 0.6)), url('about_optimized.webp') center/cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 0 20px;
-            margin-top: 60px;
-        }
+        .hero { height: 100vh; background: linear-gradient(rgba(139, 0, 0, 0.0), rgba(139, 0, 0, 0.6)), url('about_optimized.webp') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 0 20px; margin-top: 60px; }
+        .hero h1 { font-size: 3rem; margin-bottom: 15px; color: var(--secondary-color); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; max-width: 600px; text-shadow: 1px 1px 3px rgba(0,0,0,0.8); }
 
-        .hero h1 {
-            font-size: 3rem; margin-bottom: 15px; color: var(--secondary-color);
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-
-        .hero p {
-            font-size: 1.2rem; margin-bottom: 30px; max-width: 600px;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
-        }
-
-        /* Countdown Timer */
-        .countdown {
-            display: flex; gap: 20px; background: rgba(0, 0, 0, 0.5);
-            padding: 20px; border-radius: 10px; border: 1px solid var(--secondary-color);
-        }
+        .countdown { display: flex; gap: 20px; background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; border: 1px solid var(--secondary-color); }
         .time-box { text-align: center; }
         .time-box span { display: block; font-size: 2.5rem; font-weight: bold; color: var(--secondary-color); }
 
-        /* Timeline / Events Section */
         .section-title { text-align: center; margin: 50px 0 30px; color: var(--primary-color); font-size: 2.5rem; }
-        .events-grid {
-            display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 20px 50px;
-        }
-        .event-card {
-            background: white; border-left: 5px solid var(--primary-color); padding: 20px;
-            border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; cursor: pointer;
-        }
+        
+        .events-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 20px 50px; }
+        .event-card { background: white; border-left: 5px solid var(--primary-color); padding: 20px; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; cursor: pointer; display: none; }
+        .event-card.visible { display: block; }
         .event-card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
         .event-card h3 { color: var(--primary-color); margin-bottom: 10px; }
+        .event-tag { background-color: #ffe4e1; color: var(--primary-color); padding: 2px 8px; border-radius: 10px; font-size: 0.8rem; font-weight: bold; margin-bottom: 8px; display: inline-block; }
 
-        .btn-toggle-events {
-            background-color: var(--secondary-color); color: white; padding: 12px 30px;
-            border: none; border-radius: 25px; font-size: 1.1rem; font-weight: bold;
-            cursor: pointer; transition: background 0.3s, transform 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
+        .btn-toggle-events { background-color: var(--secondary-color); color: white; padding: 12px 30px; border: none; border-radius: 25px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: background 0.3s, transform 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .btn-toggle-events:hover { background-color: #b8860b; transform: translateY(-2px); }
 
-        /* --- CSS Danh Sách Thành Viên (Thu gọn có thanh cuộn) --- */
         .members-section { background-color: #f4f4f4; padding: 60px 20px; }
-        .table-container {
-            max-width: 1000px; margin: 0 auto; background: white;
-            border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            max-height: 450px; /* ĐỘ CAO KHUNG: Tự động thu gọn bảng */
-            overflow-y: auto; /* Hiển thị thanh cuộn dọc */
-        }
+        .table-container { max-width: 1000px; margin: 0 auto; background: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-height: 450px; overflow-y: auto; }
         .member-table { width: 100%; border-collapse: collapse; text-align: left; }
-        .member-table th {
-            background-color: var(--primary-color); color: white; padding: 15px;
-            position: sticky; top: 0; z-index: 10; /* Ghim tiêu đề bảng khi cuộn */
-        }
+        .member-table th { background-color: var(--primary-color); color: white; padding: 15px; position: sticky; top: 0; z-index: 10; }
         .member-table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
         .member-table tr:hover { background-color: #fff9f9; }
-        .role-badge { 
-            background: #ffe4e1; color: var(--primary-color); padding: 4px 8px; 
-            border-radius: 15px; font-size: 0.85rem; font-weight: bold; display: inline-block;
-        }
+        .role-badge { background: #ffe4e1; color: var(--primary-color); padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; font-weight: bold; display: inline-block; }
 
-        /* --- CSS Liên Hệ --- */
         .contact-section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
-        .contact-info-card {
-            background: white; padding: 30px; border-radius: 8px;
-            border-top: 5px solid var(--secondary-color); box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
+        .contact-info-card { background: white; padding: 30px; border-radius: 8px; border-top: 5px solid var(--secondary-color); box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
         .contact-info-card h3 { color: var(--primary-color); margin-bottom: 15px; }
 
-        /* Modal Gallery */
         .modal { display: none; position: fixed; z-index: 2000; padding-top: 80px; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); overflow-y: auto; }
         .modal-content { margin: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; width: 90%; max-width: 1000px; padding-bottom: 50px; }
         .modal-content img, .modal-content video, .modal-content iframe { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); background-color: #000; }
@@ -175,27 +75,33 @@
         footer { background: var(--primary-color); color: white; text-align: center; padding: 20px; margin-top: auto; }
 
         @media (max-width: 768px) {
-            .nav-links { display: none; }
+            .mobile-menu-btn { display: block; }
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background-color: var(--primary-color); padding: 10px 0; box-shadow: 0 5px 10px rgba(0,0,0,0.2); }
+            .nav-links.active { display: flex; }
+            .nav-links li { text-align: center; }
             .hero h1 { font-size: 2rem; }
             .logo img { height: 55px; }
             .contact-grid { grid-template-columns: 1fr; }
             .member-table th, .member-table td { padding: 10px; font-size: 0.9rem; }
+            .countdown { gap: 10px; }
+            .time-box span { font-size: 1.5rem; }
+            .modal-content { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Header -->
     <header>
         <nav class="navbar">
             <a href="#" class="logo">
                 <img src="logo_optimized.webp" alt="Logo Hội Quý Hợi 1983">
             </a>
-            <ul class="nav-links">
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#events">Hoạt động</a></li>
-                <li><a href="#members">Thành viên</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="toggleMenu()">Trang chủ</a></li>
+                <li><a href="#events" onclick="toggleMenu()">Hoạt động</a></li>
+                <li><a href="#members" onclick="toggleMenu()">Thành viên</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Liên hệ</a></li>
             </ul>
         </nav>
     </header>
@@ -214,22 +120,12 @@
             </div>
         </section>
 
-        <!-- Lịch sử hoạt động -->
+        <!-- Lịch sử hoạt động (Render Tự Động) -->
         <section id="events">
             <h2 class="section-title">Lịch Sử Hoạt Động</h2>
-            <div class="events-grid">
-                <div class="event-card" onclick="openGallery('tiet-xuan-2026')">
-                    <h3>Tiết Xuân 2026</h3>
-                    <p>Gặp mặt đầu năm mới, chúc thọ gia đình hội viên. (Click để xem ảnh)</p>
-                </div>
-                <div class="event-card" onclick="openGallery('tiet-thu-2025')">
-                    <h3>Tiết Thu 2025</h3>
-                    <p>Hoạt động giao lưu, thiện nguyện mùa thu. (Click để xem ảnh)</p>
-                </div>
-                <div class="event-card" onclick="openGallery('tiet-xuan-2025')">
-                    <h3>Tiết Xuân 2025</h3>
-                    <p>Họp mặt truyền thống mùa xuân.</p>
-                </div>
+            <!-- Khung lưới chứa sự kiện -->
+            <div class="events-grid" id="eventsGrid">
+                <!-- Javascript sẽ điền toàn bộ 31 bài viết và thư viện ảnh/video vào đây -->
             </div>
             
             <div style="text-align: center; margin-bottom: 30px;">
@@ -237,30 +133,25 @@
             </div>
         </section>
 
-        <!-- Phần Danh Sách Thành Viên Thay Thế Phần Đăng Ký -->
+        <!-- Danh sách thành viên -->
         <section id="members" class="members-section">
             <h2 class="section-title">Danh Sách Thành Viên (56)</h2>
-            <p style="text-align:center; margin-bottom: 20px;">Dưới đây là danh sách 56 hội viên (cuộn xuống để xem toàn bộ danh sách).</p>
-            
             <div class="table-container">
                 <table class="member-table">
                     <thead>
                         <tr>
                             <th style="width: 50px;">STT</th>
                             <th>Họ và tên</th>
-                            <th>Khu vực / Chi hội</th>
+                            <th>Chi hội</th>
                             <th>Số điện thoại</th>
-                            <th>Chức vụ / Ghi chú</th>
+                            <th>Chức vụ</th>
                         </tr>
                     </thead>
-                    <tbody id="memberTableBody">
-                        <!-- Javascript sẽ tự động điền danh sách 56 người vào đây để mã nguồn HTML nhẹ và gọn -->
-                    </tbody>
+                    <tbody id="memberTableBody"></tbody>
                 </table>
             </div>
         </section>
 
-        <!-- Phần Liên Hệ -->
         <section id="contact" class="contact-section">
             <h2 class="section-title">Liên Hệ Ban Liên Lạc</h2>
             <div class="contact-grid">
@@ -272,7 +163,7 @@
                 </div>
                 <div class="contact-info-card">
                     <h3>Thông Tin Chuyển Khoản (Quỹ Hội)</h3>
-                    <p><strong>Ngân hàng:</strong> Vietcombank (Chi nhánh Hội Sở)</p>
+                    <p><strong>Ngân hàng:</strong> Vietcombank</p>
                     <p><strong>Số tài khoản:</strong> 1234567890</p>
                     <p><strong>Chủ tài khoản:</strong> DUONG HUU ANH</p>
                     <p><strong>Nội dung CK:</strong> [Họ Tên] - [SĐT] - Dong quy Quy Hoi 2026</p>
@@ -283,10 +174,9 @@
 
     <footer>
         <p>&copy; 2026 Hội Đồng Niên Quý Hợi 1983. Mọi bản quyền được bảo lưu.</p>
-        <p>Liên hệ Ban Liên Lạc: <a href="mailto:banlienlac@quyhoi.com" style="color:var(--secondary-color);">banlienlac@quyhoi.com</a></p>
     </footer>
 
-    <!-- Cửa sổ nổi hiển thị ảnh (Modal) -->
+    <!-- Cửa sổ nổi hiển thị ảnh/video (Modal) -->
     <div id="imageModal" class="modal">
         <span class="close-modal" onclick="closeModal()">&times;</span>
         <div class="modal-content" id="modalImages"></div>
@@ -294,13 +184,82 @@
 
     <!-- JavaScript -->
     <script>
-        // 1. Dữ liệu Danh Sách 56 Thành Viên
+        function toggleMenu() {
+            if (window.innerWidth <= 768) {
+                document.getElementById('navLinks').classList.toggle('active');
+            }
+        }
+
+        // TỰ ĐỘNG ĐIỀN 31 SỰ KIỆN TỪ FILE MỚI VÀO WEB
+        const eventsGrid = document.getElementById("eventsGrid");
+        if (typeof eventsData !== 'undefined') {
+            eventsData.forEach((ev, index) => {
+                // Tạo thẻ HTML cho mỗi sự kiện
+                eventsGrid.innerHTML += `
+                    <div class="event-card ${index < 8 ? 'visible' : 'hidden'}" onclick="openGallery('${ev.id}')">
+                        <span class="event-tag">${ev.category}</span>
+                        <h3>${ev.title}</h3>
+                        <p>${ev.desc}</p>
+                    </div>
+                `;
+            });
+        }
+
+        // --- Xử lý Thư viện Media (Kết nối trực tiếp ảnh độ phân giải cao) ---
+        function openGallery(eventId) {
+            const modalImages = document.getElementById("modalImages");
+            modalImages.innerHTML = ''; 
+            
+            // Tìm sự kiện được click trong cục dữ liệu
+            const eventObj = eventsData.find(e => e.id === eventId);
+            
+            if (eventObj && eventObj.gallery && eventObj.gallery.length > 0) {
+                eventObj.gallery.forEach(item => {
+                    let el;
+                    if (item.type === 'image') {
+                        el = document.createElement('img');
+                        el.src = item.src;
+                    } else if (item.type === 'youtube' || item.type === 'mp4') {
+                        el = document.createElement('iframe');
+                        el.src = item.src;
+                        el.setAttribute('allowfullscreen', 'true');
+                        el.style.border = "none";
+                    }
+                    if (el) modalImages.appendChild(el);
+                });
+            } else {
+                modalImages.innerHTML = '<h3 style="color:white; text-align:center; grid-column: 1/-1;">Đang cập nhật hình ảnh và video...</h3>';
+            }
+            document.getElementById("imageModal").style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+            document.body.style.overflow = "auto";
+            document.getElementById("modalImages").innerHTML = ''; // Dừng video
+        }
+        window.onclick = function(e) { if (e.target == document.getElementById("imageModal")) closeModal(); }
+
+        // --- Xử lý Ẩn/Hiện Sự Kiện ---
+        let isExpanded = false;
+        function toggleEvents() {
+            isExpanded = !isExpanded;
+            const cards = document.querySelectorAll('.event-card.hidden');
+            cards.forEach(c => {
+                c.style.display = isExpanded ? 'block' : 'none'; 
+            });
+            document.getElementById('toggleEventsBtn').innerText = isExpanded ? 'Thu gọn lịch sử' : 'Xem thêm các năm trước';
+            if (!isExpanded) document.getElementById('events').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // --- Danh Sách Thành Viên (Giữ nguyên) ---
         const membersData = [
             ["NGUYỄN NGỌC SƠN", "LT Bắc", "0984.148.333", "Hội trưởng"],
             ["NGUYỄN NGỌC THẮNG", "LT Bắc", "0986.251.239", ""],
             ["NGUYỄN VŨ TÙNG", "LT Bắc", "0976.187.983", ""],
             ["VŨ XUÂN TĨNH", "LT Bắc", "0399.154.044", ""],
-            ["XUÂN HUY HOÀNG", "LT Bắc", "0987.490.163", "Tổ trưởng khu LT Bắc"],
+            ["XUÂN HUY HOÀNG", "LT Bắc", "0987.490.163", "Tổ trưởng"],
             ["ĐỖ XUÂN TIẾN", "LT Bắc", "0984.837.883", ""],
             ["THẾ MẠNH HUY", "LT Bắc", "01282.243.828", ""],
             ["NGUYỄN VIẾT PHONG", "LT Bắc", "0904.220.040", ""],
@@ -309,7 +268,7 @@
             ["VŨ XUÂN MẠNH", "LT Bắc", "0984.083.875", ""],
             ["NGUYỄN ĐĂNG BÌNH", "LT Bắc", "0982.637.683", ""],
             ["NGUYỄN THÀNH TUẤN", "LT Bắc", "0986.899.299", ""],
-            ["DƯƠNG ĐÌNH KHÁNH", "LT Nam", "0904.430.551", "Tổ trưởng khu LT Nam"],
+            ["DƯƠNG ĐÌNH KHÁNH", "LT Nam", "0904.430.551", "Tổ trưởng"],
             ["BÙI MINH TUÂN", "LT Nam", "0969.617.967", ""],
             ["NGUYỄN ĐỨC HỢI", "LT Nam", "0988.569.901", ""],
             ["NGUYỄN THẾ NAM", "LT Nam", "0904.485.162", ""],
@@ -331,7 +290,7 @@
             ["NGUYỄN QUANG THẮNG", "LT Nam", "0913.665.664", ""],
             ["NGUYỄN VĂN TIẾN", "LT Nam", "0977.188.248", ""],
             ["DƯƠNG HỮU HƯNG", "LT Nam", "0387.974.083", ""],
-            ["NGUYỄN QUANG THẮNG", "Phố Hồ", "0936.729.038", "Tổ trưởng khu Phố Hồ"],
+            ["NGUYỄN QUANG THẮNG", "Phố Hồ", "0936.729.038", "Tổ trưởng"],
             ["TRỌNG ANH TRANG", "Phố Hồ", "0983.138.006", ""],
             ["NGUYỄN PHÚ QUÝ", "Phố Hồ", "0988.807.129", ""],
             ["NGUYỄN QUANG DŨNG", "Phố Hồ", "0388.210.125", ""],
@@ -345,7 +304,7 @@
             ["ĐỖ ANH TUẤN", "Phố Hồ", "0968.901.783", ""],
             ["NGUYỄN THÀNH NGÂN", "Phố Hồ", "0963.190.338", ""],
             ["HỒ MINH THẮNG", "Phố Hồ", "0973.918.686", ""],
-            ["TRẦN VĂN QUÝ", "Bến Hồ", "0395.997.488", "Tổ trưởng khu Bến Hồ"],
+            ["TRẦN VĂN QUÝ", "Bến Hồ", "0395.997.488", "Tổ trưởng"],
             ["NGÔ VĂN ĐÔNG", "Bến Hồ", "0384.117.431", ""],
             ["LƯƠNG GIA ĐOÀN", "Bến Hồ", "0352.846.999", ""],
             ["NGUYỄN VĂN NINH", "Bến Hồ", "0345.039.888", ""],
@@ -354,96 +313,22 @@
             ["NGUYỄN NGỌC LỢI", "Bến Hồ", "0961.133.134", ""]
         ];
 
-        // Tự động vẽ bảng thành viên
         const tbody = document.getElementById("memberTableBody");
         membersData.forEach((member, index) => {
             const roleHtml = member[3] ? `<span class="role-badge">${member[3]}</span>` : "";
-            const row = `<tr>
-                <td>${index + 1}</td>
-                <td><strong>${member[0]}</strong></td>
-                <td>${member[1]}</td>
-                <td>${member[2]}</td>
-                <td>${roleHtml}</td>
-            </tr>`;
-            tbody.innerHTML += row;
+            tbody.innerHTML += `<tr><td>${index + 1}</td><td><strong>${member[0]}</strong></td><td>${member[1]}</td><td>${member[2]}</td><td>${roleHtml}</td></tr>`;
         });
 
-        // 2. Đếm ngược thời gian
+        // --- Đếm ngược ---
         const countDownDate = new Date("Aug 15, 2026 00:00:00").getTime();
         const x = setInterval(function() {
-            const now = new Date().getTime();
-            const distance = countDownDate - now;
-
+            const distance = countDownDate - new Date().getTime();
             document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
             document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
             document.getElementById("mins").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
             document.getElementById("secs").innerText = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, '0');
-
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("countdown").innerHTML = "<h3>Sự kiện đang diễn ra!</h3>";
-            }
+            if (distance < 0) { clearInterval(x); document.getElementById("countdown").innerHTML = "<h3>Sự kiện đang diễn ra!</h3>"; }
         }, 1000);
-
-        // 3. Xử lý Thư viện Media
-        const eventGalleries = {
-            'tiet-xuan-2026': [
-                { type: 'image', src: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=600&q=80' }
-            ],
-            'tiet-thu-2025': [
-                { type: 'image', src: 'https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=600&q=80' }
-            ]
-        };
-
-        function openGallery(eventId) {
-            const modal = document.getElementById("imageModal");
-            const modalImages = document.getElementById("modalImages");
-            modalImages.innerHTML = ''; 
-            const mediaList = eventGalleries[eventId];
-            
-            if (mediaList && mediaList.length > 0) {
-                mediaList.forEach(item => {
-                    let el = document.createElement(item.type === 'image' ? 'img' : (item.type === 'mp4' ? 'video' : 'iframe'));
-                    el.src = item.src;
-                    if(item.type === 'mp4') el.controls = true;
-                    if(item.type === 'youtube') { el.setAttribute('allowfullscreen', 'true'); el.style.border = "none"; }
-                    modalImages.appendChild(el);
-                });
-            } else {
-                modalImages.innerHTML = '<h3 style="color:white; text-align:center; grid-column: 1/-1;">Đang cập nhật hình ảnh...</h3>';
-            }
-            modal.style.display = "block";
-            document.body.style.overflow = "hidden";
-        }
-
-        function closeModal() {
-            document.getElementById("imageModal").style.display = "none";
-            document.body.style.overflow = "auto";
-            document.getElementById("modalImages").innerHTML = ''; 
-        }
-        window.onclick = function(e) { if (e.target == document.getElementById("imageModal")) closeModal(); }
-
-        // 4. Xử lý Ẩn/Hiện Lịch Sử Hoạt Động
-        const visibleCount = 2;
-        let isExpanded = false;
-
-        document.addEventListener("DOMContentLoaded", function() {
-            const cards = document.querySelectorAll('.event-card');
-            if (cards.length > visibleCount) {
-                cards.forEach((c, i) => { if (i >= visibleCount) c.style.display = 'none'; });
-            } else {
-                document.getElementById('toggleEventsBtn').style.display = 'none';
-            }
-        });
-
-        function toggleEvents() {
-            isExpanded = !isExpanded;
-            document.querySelectorAll('.event-card').forEach((c, i) => {
-                if (i >= visibleCount) c.style.display = isExpanded ? '' : 'none'; 
-            });
-            document.getElementById('toggleEventsBtn').innerText = isExpanded ? 'Thu gọn lịch sử' : 'Xem thêm các năm trước';
-            if (!isExpanded) document.getElementById('events').scrollIntoView({ behavior: 'smooth' });
-        }		
     </script>
 </body>
 </html>
