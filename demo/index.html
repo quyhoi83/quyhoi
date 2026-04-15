@@ -42,11 +42,20 @@
         .section-title { text-align: center; margin: 50px 0 30px; color: var(--primary-color); font-size: 2.5rem; }
         
         .events-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 20px 50px; }
-        .event-card { background: white; border-left: 5px solid var(--primary-color); padding: 20px; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; cursor: pointer; display: none; }
-        .event-card.visible { display: block; }
+        .event-card { 
+            background: white; border-left: 5px solid var(--primary-color); padding: 20px; 
+            border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            transition: transform 0.3s, opacity 0.5s ease-in-out; 
+            cursor: pointer; display: none; opacity: 0; 
+        }
+        .event-card.visible { display: block; opacity: 1; }
         .event-card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
         .event-card h3 { color: var(--primary-color); margin-bottom: 10px; }
-        .event-tag { background-color: #ffe4e1; color: var(--primary-color); padding: 2px 8px; border-radius: 10px; font-size: 0.8rem; font-weight: bold; margin-bottom: 8px; display: inline-block; }
+        
+        /* Màu Tag phân biệt Chúc Thọ và Hoạt Động */
+        .event-tag { padding: 3px 10px; border-radius: 15px; font-size: 0.8rem; font-weight: bold; margin-bottom: 8px; display: inline-block; }
+        .tag-hoatdong { background-color: #ffe4e1; color: var(--primary-color); }
+        .tag-chuctho { background-color: #fff8dc; color: #b8860b; border-left: 3px solid var(--secondary-color); }
 
         .btn-toggle-events { background-color: var(--secondary-color); color: white; padding: 12px 30px; border: none; border-radius: 25px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: background 0.3s, transform 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         .btn-toggle-events:hover { background-color: #b8860b; transform: translateY(-2px); }
@@ -66,7 +75,7 @@
 
         .modal { display: none; position: fixed; z-index: 2000; padding-top: 80px; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); overflow-y: auto; }
         .modal-content { margin: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; width: 90%; max-width: 1000px; padding-bottom: 50px; }
-        .modal-content img, .modal-content video, .modal-content iframe { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); background-color: #000; }
+        .modal-content img, .modal-content video, .modal-content iframe { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); background-color: #111; }
         .modal-content img { cursor: pointer; transition: transform 0.3s; }
         .modal-content img:hover { transform: scale(1.05); }
         .close-modal { position: fixed; top: 20px; right: 40px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer; transition: 0.3s; z-index: 2001; }
@@ -123,10 +132,7 @@
         <!-- Lịch sử hoạt động (Render Tự Động) -->
         <section id="events">
             <h2 class="section-title">Lịch Sử Hoạt Động</h2>
-            <!-- Khung lưới chứa sự kiện -->
-            <div class="events-grid" id="eventsGrid">
-                <!-- Javascript sẽ điền toàn bộ 31 bài viết và thư viện ảnh/video vào đây -->
-            </div>
+            <div class="events-grid" id="eventsGrid"></div>
             
             <div style="text-align: center; margin-bottom: 30px;">
                 <button id="toggleEventsBtn" class="btn-toggle-events" onclick="toggleEvents()">Xem thêm các năm trước</button>
@@ -174,6 +180,7 @@
 
     <footer>
         <p>&copy; 2026 Hội Đồng Niên Quý Hợi 1983. Mọi bản quyền được bảo lưu.</p>
+        <p>Liên hệ Ban Liên Lạc: <a href="mailto:banlienlac@quyhoi.com" style="color:var(--secondary-color);">banlienlac@quyhoi.com</a></p>		
     </footer>
 
     <!-- Cửa sổ nổi hiển thị ảnh/video (Modal) -->
@@ -182,7 +189,6 @@
         <div class="modal-content" id="modalImages"></div>
     </div>
 
-    <!-- JavaScript -->
     <script>
         function toggleMenu() {
             if (window.innerWidth <= 768) {
@@ -190,27 +196,37 @@
             }
         }
 
-        // TỰ ĐỘNG ĐIỀN 31 SỰ KIỆN TỪ FILE MỚI VÀO WEB
+        // ĐIỀN DỮ LIỆU SỰ KIỆN TỪ FILE JS
         const eventsGrid = document.getElementById("eventsGrid");
-        if (typeof eventsData !== 'undefined') {
+        const visibleCount = 8; // Mặc định hiện 8 sự kiện mới nhất
+        
+        if (typeof eventsData !== 'undefined' && Array.isArray(eventsData)) {
+            eventsGrid.innerHTML = ''; 
             eventsData.forEach((ev, index) => {
-                // Tạo thẻ HTML cho mỗi sự kiện
+                const title = ev.title || "Sự kiện Hội Quý Hợi";
+                const category = ev.category || "Hoạt động";
+                
+                // Đổi style nếu là Chúc thọ để phân biệt rõ ràng
+                const tagClass = category.includes("Chúc thọ") ? "tag-chuctho" : "tag-hoatdong";
+                
+                const imgCount = (ev.gallery && ev.gallery.length > 0) 
+                                 ? `<p style="font-size: 0.95rem; color: #555;">📸 Có <strong>${ev.gallery.length}</strong> hình ảnh (Click để xem)</p>` 
+                                 : `<p style="font-size: 0.95rem; color: #999;">Chưa cập nhật ảnh</p>`;
+
                 eventsGrid.innerHTML += `
-                    <div class="event-card ${index < 8 ? 'visible' : 'hidden'}" onclick="openGallery('${ev.id}')">
-                        <span class="event-tag">${ev.category}</span>
-                        <h3>${ev.title}</h3>
-                        <p>${ev.desc}</p>
+                    <div class="event-card ${index < visibleCount ? 'visible' : 'hidden'}" onclick="openGallery('${ev.id}')">
+                        <span class="event-tag ${tagClass}">${category}</span>
+                        <h3>${title}</h3>
+                        ${imgCount}
                     </div>
                 `;
             });
         }
 
-        // --- Xử lý Thư viện Media (Kết nối trực tiếp ảnh độ phân giải cao) ---
+        // TẢI ẢNH TỪNG PHẦN (LAZY LOADING) VÀ PHÁT VIDEO
         function openGallery(eventId) {
             const modalImages = document.getElementById("modalImages");
             modalImages.innerHTML = ''; 
-            
-            // Tìm sự kiện được click trong cục dữ liệu
             const eventObj = eventsData.find(e => e.id === eventId);
             
             if (eventObj && eventObj.gallery && eventObj.gallery.length > 0) {
@@ -218,9 +234,13 @@
                     let el;
                     if (item.type === 'image') {
                         el = document.createElement('img');
+                        el.setAttribute('loading', 'lazy'); 
                         el.src = item.src;
+                        el.style.opacity = '0';
+                        el.onload = () => { el.style.opacity = '1'; el.style.transition = 'opacity 0.5s ease-in'; };
                     } else if (item.type === 'youtube' || item.type === 'mp4') {
                         el = document.createElement('iframe');
+                        el.setAttribute('loading', 'lazy'); 
                         el.src = item.src;
                         el.setAttribute('allowfullscreen', 'true');
                         el.style.border = "none";
@@ -237,24 +257,30 @@
         function closeModal() {
             document.getElementById("imageModal").style.display = "none";
             document.body.style.overflow = "auto";
-            document.getElementById("modalImages").innerHTML = ''; // Dừng video
+            document.getElementById("modalImages").innerHTML = ''; 
         }
         window.onclick = function(e) { if (e.target == document.getElementById("imageModal")) closeModal(); }
 
-        // --- Xử lý Ẩn/Hiện Sự Kiện ---
+        // ẨN/HIỆN THÊM SỰ KIỆN CÓ HIỆU ỨNG FADE-IN
         let isExpanded = false;
         function toggleEvents() {
             isExpanded = !isExpanded;
             const cards = document.querySelectorAll('.event-card.hidden');
-            cards.forEach(c => {
-                c.style.display = isExpanded ? 'block' : 'none'; 
+            cards.forEach((c, i) => {
+                if (isExpanded) {
+                    c.style.display = 'block';
+                    setTimeout(() => { c.style.opacity = '1'; }, i * 50); // Hiện từ từ từng thẻ một
+                } else {
+                    c.style.opacity = '0';
+                    setTimeout(() => { c.style.display = 'none'; }, 300);
+                }
             });
             document.getElementById('toggleEventsBtn').innerText = isExpanded ? 'Thu gọn lịch sử' : 'Xem thêm các năm trước';
             if (!isExpanded) document.getElementById('events').scrollIntoView({ behavior: 'smooth' });
         }
 
-        // --- Danh Sách Thành Viên (Giữ nguyên) ---
-        const membersData = [
+        // DANH SÁCH THÀNH VIÊN
+        const membersDataList = [
             ["NGUYỄN NGỌC SƠN", "LT Bắc", "0984.148.333", "Hội trưởng"],
             ["NGUYỄN NGỌC THẮNG", "LT Bắc", "0986.251.239", ""],
             ["NGUYỄN VŨ TÙNG", "LT Bắc", "0976.187.983", ""],
@@ -314,12 +340,12 @@
         ];
 
         const tbody = document.getElementById("memberTableBody");
-        membersData.forEach((member, index) => {
+        membersDataList.forEach((member, index) => {
             const roleHtml = member[3] ? `<span class="role-badge">${member[3]}</span>` : "";
             tbody.innerHTML += `<tr><td>${index + 1}</td><td><strong>${member[0]}</strong></td><td>${member[1]}</td><td>${member[2]}</td><td>${roleHtml}</td></tr>`;
         });
 
-        // --- Đếm ngược ---
+        // ĐẾM NGƯỢC
         const countDownDate = new Date("Aug 15, 2026 00:00:00").getTime();
         const x = setInterval(function() {
             const distance = countDownDate - new Date().getTime();
