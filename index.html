@@ -1,176 +1,333 @@
 <!DOCTYPE html>
-<html lang="vi-VN">
+<html lang="vi">
 <head>
-<title>Hội đồng niên Quý Hợi 1983</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="Quy hoi, Hoi dong nien quy hoi, Lang lac tho, Quy hoi 1983, Hoi dong nien 1983">
-<meta name="Description" content="Hoi dong nien quy hoi 1983.">
-<link rel="canonical" href="https://quyhoi.com" />
-<meta property="og:image" content="https://quyhoi.com/static/images/about.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="460">
-<meta property="og:image:height" content="406">
-<meta property="og:description" content="Hoi dong nien quy hoi 1983.">
-<link rel="icon" href="https://quyhoi.com/static/images/favico.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/static/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/static/images/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#04aa6d">
-<meta name="msapplication-TileColor" content="#00a300">
-<meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="/static/stylesheets/default.css?v=1.0">
-<link rel="stylesheet" href="/static/stylesheets/responsive.css?v=1.0">
-<link rel="stylesheet" href="/static/stylesheets/custom.css?v=1.0">
-<link rel="stylesheet" href="/static/stylesheets/slideshow.css">
-<script type="text/javascript" src="/static/javascript/jquery.min.js"></script>
-<script type="text/javascript" src="/static/javascript/jquery.subtle-slideshow.js"></script>
-<style>.static-content{padding:20px}h1{font-family:sans-serif;margin:0;position:absolute;bottom:20px;color:#fff;text-shadow:0 2px 4px rgba(0,0,0,.4)}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hội Đồng Niên Quý Hợi 1983 - Kỷ Niệm Gắn Kết</title>   
+    <link rel="preload" as="image" href="https://quyhoi.com/static/uploads/tiet-xuan-2026.webp">
+    <link rel="shortcut icon" href="/static/images/logo_flat_32.png">
+    <meta name="description" content="Trang thông tin chính thức của Hội Đồng Niên Quý Hợi 1983.">   
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">   
+    <script src="/static/javascript/events_data.js"></script>  
+    <style>
+        :root { --primary-color: #8B0000; --secondary-color: #DAA520; --bg-light: #f9f9f9; --text-dark: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Roboto', sans-serif; color: var(--text-dark); line-height: 1.6; background-color: var(--bg-light); }
+        h1, h2, h3 { font-family: 'Merriweather', serif; }
+        header { background-color: var(--primary-color); color: white; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 10px 5%; max-width: 1200px; margin: 0 auto; position: relative; }
+        .logo { display: flex; align-items: center; }
+        .logo img { height: 75px; width: auto; display: block; transition: transform 0.3s; background: transparent; border: none; padding: 0; margin: 0; }
+        .logo img:hover { transform: scale(1.15); filter: drop-shadow(0 0 8px rgba(218, 165, 32, 0.6)); }
+        .nav-links { list-style: none; display: flex; gap: 20px; transition: 0.3s ease-in-out; }
+        .nav-links a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s; display: block; padding: 10px; }
+        .nav-links a:hover { color: var(--secondary-color); }
+        .mobile-menu-btn { display: none; background: none; border: none; color: white; font-size: 2rem; cursor: pointer; }
+        .hero { height: 100vh; background: linear-gradient(rgba(139, 0, 0, 0.0), rgba(139, 0, 0, 0.0)), url('/static/uploads/tiet-xuan-2026.webp') center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 0 20px; margin-top: 60px; }
+        .hero h1 { font-size: 3rem; margin-bottom: 15px; color: var(--secondary-color); text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; max-width: 600px; text-shadow: 1px 1px 3px rgba(0,0,0,0.8); }
+        .countdown { display: flex; gap: 20px; background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; border: 1px solid var(--secondary-color); }
+        .time-box { text-align: center; }
+        .time-box span { display: block; font-size: 2.5rem; font-weight: bold; color: var(--secondary-color); }
+        .section-title { text-align: center; margin: 50px 0 30px; color: var(--primary-color); font-size: 2.5rem; }        
+        .events-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 20px 50px; }
+        .event-card { 
+            background: white; border-left: 5px solid var(--primary-color); padding: 20px; 
+            border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            transition: transform 0.3s, opacity 0.5s ease-in-out; 
+            cursor: pointer; display: none; opacity: 0; 
+        }
+        .event-card.visible { display: block; opacity: 1; }
+        .event-card:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+        .event-card h3 { color: var(--primary-color); margin-bottom: 10px; }        
+        /* Màu Tag phân biệt Chúc Thọ và Hoạt Động */
+        .event-tag { padding: 3px 10px; border-radius: 15px; font-size: 0.8rem; font-weight: bold; margin-bottom: 8px; display: inline-block; }
+        .tag-hoatdong { background-color: #ffe4e1; color: var(--primary-color); }
+        .tag-chuctho { background-color: #fff8dc; color: #b8860b; border-left: 3px solid var(--secondary-color); }
+        .btn-toggle-events { background-color: var(--secondary-color); color: white; padding: 12px 30px; border: none; border-radius: 25px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: background 0.3s, transform 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .btn-toggle-events:hover { background-color: #b8860b; transform: translateY(-2px); }
+        .members-section { background-color: #f4f4f4; padding: 60px 20px; }
+        .table-container { max-width: 1000px; margin: 0 auto; background: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-height: 450px; overflow-y: auto; }
+        .member-table { width: 100%; border-collapse: collapse; text-align: left; }
+        .member-table th { background-color: var(--primary-color); color: white; padding: 15px; position: sticky; top: 0; z-index: 10; }
+        .member-table td { padding: 12px 15px; border-bottom: 1px solid #eee; }
+        .member-table tr:hover { background-color: #fff9f9; }
+        .role-badge { background: #ffe4e1; color: var(--primary-color); padding: 4px 8px; border-radius: 15px; font-size: 0.85rem; font-weight: bold; display: inline-block; }
+        .contact-section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .contact-info-card { background: white; padding: 30px; border-radius: 8px; border-top: 5px solid var(--secondary-color); box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .contact-info-card h3 { color: var(--primary-color); margin-bottom: 15px; }
+        .modal { display: none; position: fixed; z-index: 2000; padding-top: 80px; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); overflow-y: auto; }
+        .modal-content { margin: auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; width: 90%; max-width: 1000px; padding-bottom: 50px; }
+        .modal-content img, .modal-content video, .modal-content iframe { width: 100%; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.5); background-color: #111; }
+        .modal-content img { cursor: pointer; transition: transform 0.3s; }
+        .modal-content img:hover { transform: scale(1.05); }
+        .close-modal { position: fixed; top: 20px; right: 40px; color: #f1f1f1; font-size: 40px; font-weight: bold; cursor: pointer; transition: 0.3s; z-index: 2001; }
+        .close-modal:hover { color: var(--secondary-color); }
+        footer { background: var(--primary-color); color: white; text-align: center; padding: 20px; margin-top: auto; }
+        @media (max-width: 768px) {
+            .mobile-menu-btn { display: block; }
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; width: 100%; background-color: var(--primary-color); padding: 10px 0; box-shadow: 0 5px 10px rgba(0,0,0,0.2); }
+            .nav-links.active { display: flex; }
+            .nav-links li { text-align: center; }
+            .hero h1 { font-size: 2rem; }
+            .logo img { height: 55px; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .member-table th, .member-table td { padding: 10px; font-size: 0.9rem; }
+            .countdown { gap: 10px; }
+            .time-box span { font-size: 1.5rem; }
+            .modal-content { grid-template-columns: 1fr; }
+        }
+    </style>
 </head>
 <body>
-<header class="main_header">
-<div class="header_wrapper">
-<div class="logo_sect">
-<a href="/" role="button" title="Hội đồng niên Quý Hợi" class="logo logo_img"></a>
-</div>
-<div class="header_rp">
-<nav>
-<div class="menu-main-menu-container">
-<ul id="menu-main-menu" class="menu">
-<li class="current-menu-parent menu-item-has-children">
-<a href="/"><span>Home</span></a>
-</li>
-<li class="menu-item-has-children">
-<a href="/gallery.html"><span>Gallery</span></a>
-</li>
-<li class="menu-item-has-children">
-<a href="javascript:void(0);"><span>Blog</span></a>
-<ul class="sub-menu">
-<li><a href="/hoat-dong.html"><span>Hoạt động</span></a></li>
-<li><a href="/chuc-tho.html"><span>Chúc thọ</span></a></li>
-</ul>
-</li>
-<li class="menu-item-has-children">
-<a href="/member.html"><span>Member</span></a>
-</li>
-<li class="menu-item-has-children">
-<a href="/about.html"><span>About</span></a>
-</li>
-<li class="menu-item-has-children">
-<a href="/contacts.html"><span>Contact</span></a>
-</li>
-</ul>
-</div>
-</nav>
-</div>
-<div class="clear"></div>
-</div>
-</header>
-    <div id="slides">
-      <a class="slide" title="Tiết xuan 2026" href="/hop-mat-xuan-2026.html">
-        <span class="animate right" style="background-image: url(/static/uploads/tiet-xuan-2026.jpg)"></span>
-        <div class="static-content"><h1>Tiết xuân 2026</h1></div>
-      </a>		
-      <a class="slide" title="Tiết thu 2025" href="/hop-mat-thu-2025.html">
-        <span class="animate out" style="background-image: url(/static/uploads/tiet-thu-2025.jpg)"></span>
-        <div class="static-content"><h1>Tiết thu 2025</h1></div>
-      </a>	
-      <a class="slide" title="Tiết xuân 2025" href="/hop-mat-xuan-2025.html">
-        <span class="animate down" style="background-image: url(/static/uploads/tiet-xuan-2025.jpg)"></span>
-        <div class="static-content"><h1>Tiết xuân 2025</h1></div>
-      </a>		
-      <a class="slide" title="Tiết thu 2024" href="/hop-mat-thu-2024.html">
-        <span class="animate in" style="background-image: url(/static/uploads/tiet-thu-2024.jpg)"></span>
-        <div class="static-content"><h1>Tiết thu 2024</h1></div>
-      </a>	    
-      <a class="slide" title="Tiết xuân 2024" href="/hop-mat-xuan-2024.html">
-        <span class="animate right" style="background-image: url(/static/uploads/tiet-xuan-2024.jpg)"></span>
-        <div class="static-content"><h1>Tiết xuân 2024</h1></div>
-      </a>	        
-      <a class="slide" title="Tiết thu 2023" href="/hop-mat-thu-2023.html">
-        <span class="animate down" style="background-image: url(/static/uploads/tiet-thu-2023.jpg)"></span>
-        <div class="static-content"><h1>Tiết thu 2023</h1></div>
-      </a>	
-      <a class="slide" title="Tiết xuân 2023" href="/hop-mat-xuan-2023.html">
-        <span class="animate down" style="background-image: url(/static/uploads/tiet-xuan-2023.jpg)"></span>
-        <div class="static-content"><h1>Tiết xuân 2023</h1></div>
-      </a>
-      <a class="slide" title="Tiết thu 2022" href="/hop-mat-thu-2022.html">
-        <span class="animate in" style="background-image: url(/static/uploads/tiet-thu-2022.jpg)"></span>
-        <div class="static-content"><h1>Tiết thu 2022</h1></div>
-      </a>
-      <a class="slide" title="Tiết xuân 2021" href="/hop-mat-xuan-2021.html">
-        <span class="animate right" style="background-image: url(/static/uploads/tiet-xuan-2021.jpg)"></span>
-        <div class="static-content"><h1>Tiết xuân 2021</h1></div>
-      </a>
-      <a class="slide" title="Tiết thu 2020" href="/hop-mat-thu-2020.html">
-        <span class="animate out" style="background-image: url(/static/uploads/tiet-thu-2020.jpg)"></span>
-        <div class="static-content"><h1>Tiết thu 2020</h1></div>
-      </a>
-      <a class="slide" title="Tiết xuân 2020" href="/hop-mat-xuan-2020.html">
-        <span class="animate right" style="background-image: url(/static/uploads/tiet-xuan-2020.jpg)"></span>
-        <div class="static-content"><h1>Tiết xuân 2020</h1></div>
-      </a>
-      <a class="slide" title="Tiết thu 2019" href="/hop-mat-thu-2019.html">
-        <span class="animate in" style="background-image: url(/static/uploads/tiet-thu-2019.jpg)"></span>
-        <div class="static-content"><h1>Tiết thu 2019</h1></div>
-      </a>
-      <a class="slide" title="Tiết xuân 2019" href="/hop-mat-xuan-2019.html">
-        <span class="animate down" style="background-image: url(/static/uploads/tiet-xuan-2019.jpg)"></span>
-        <div class="static-content"><h1>Tiết xuân 2019</h1></div>
-      </a>
-      <a class="slide" title="Tiết thu 2018" href="/hop-mat-thu-2018.html">
-        <span class="animate out" style="background-image: url(/static/uploads/tiet-thu-2018.jpg)"></span>
-        <div class="static-content"><h1>Tiết thu 2018</h1></div>
-      </a>
-      <a class="slide" title="Tiết xuân 2018" href="/hop-mat-xuan-2018.html">
-        <span class="animate right" style="background-image: url(/static/uploads/tiet-xuan-2018.jpg)"></span>
-        <div class="static-content"><h1>Tiết xuân 2018</h1></div>
-      </a>
-      <a class="slide" title="Tiết xuân 2017" href="/hop-mat-xuan-2017.html">
-        <span class="animate out" style="background-image: url(/static/uploads/tiet-xuan-2017.jpg)"></span>
-        <div class="static-content"><h1>Tiết xuân 2017</h1></div>
-      </a>
-      <a class="slide" title="Tiết thu 2016" href="/hop-mat-thu-2016.html">
-        <span class="animate right" style="background-image: url(/static/uploads/tiet-thu-2016.jpg)"></span>
-        <div class="static-content"><h1>Tiết thu 2016</h1></div>
-      </a>	
-      <a class="slide" title="Tiết xuân 2016" href="/hop-mat-xuan-2016.html">
-        <span class="animate in" style="background-image: url(/static/uploads/tiet-xuan-2016.jpg)"></span>
-        <div class="static-content"><h1>Tiết xuân 2016</h1></div>
-      </a>
-      <a class="slide" title="Tiết xuân 2015" href="/hop-mat-xuan-2015.html">
-        <span class="animate down" style="background-image: url(/static/uploads/tiet-xuan-2015.jpg)"></span>
-        <div class="static-content"><h1>Tiết xuân 2015</h1></div>
-      </a>
-      <a class="slide" title="Tiết xuân 2014" href="/hop-mat-xuan-2014.html">
-        <span class="animate right" style="background-image: url(/static/uploads/tiet-xuan-2014.jpg)"></span>
-        <div class="static-content"><h1>Tiết xuân 2014</h1></div>
-      </a>
-      <a class="slide" title="Tiết xuân 2013" href="/hop-mat-xuan-2013.html">
-        <span class="animate in" style="background-image: url(/static/uploads/tiet-xuan-2013.jpg)"></span>
-        <div class="static-content"><h1>Tiết xuân 2013</h1></div>
-      </a>
-      <a class="slide" title="Tiết xuân 2012" href="/hop-mat-xuan-2012.html">
-        <span class="animate right" style="background-image: url(/static/uploads/tiet-xuan-2012.jpg)"></span>
-        <div class="static-content"><h1>Tiết xuân 2012</h1></div>
-      </a>  
+    <header>
+        <nav class="navbar">
+          <a href="#" class="logo">
+             <img src="logo_optimized.webp" alt="Logo Hội Quý Hợi 1983" 
+             style="height:75px; width:auto; border-radius: 50%;">
+          </a>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="toggleMenu()">Trang chủ</a></li>
+                <li><a href="#events" onclick="toggleMenu()">Hoạt động</a></li>
+                <li><a href="#members" onclick="toggleMenu()">Thành viên</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Hội Đồng Niên Quý Hợi 1983</h1>
+            <p>Kết nối đam mê, chia sẻ yêu thương và lưu giữ những khoảnh khắc đẹp nhất của tuổi thanh xuân.</p>           
+            <h3>Hướng tới Tiết Thu 2026</h3>
+            <div class="countdown" id="countdown">
+                <div class="time-box"><span id="days">00</span>Ngày</div>
+                <div class="time-box"><span id="hours">00</span>Giờ</div>
+                <div class="time-box"><span id="mins">00</span>Phút</div>
+                <div class="time-box"><span id="secs">00</span>Giây</div>
+            </div>
+        </section>
+        <!-- Lịch sử hoạt động (Render Tự Động) -->
+        <section id="events">
+            <h2 class="section-title">Lịch Sử Hoạt Động</h2>
+            <div class="events-grid" id="eventsGrid"></div>           
+            <div style="text-align: center; margin-bottom: 30px;">
+                <button id="toggleEventsBtn" class="btn-toggle-events" onclick="toggleEvents()">Xem thêm các năm trước</button>
+            </div>
+        </section>
+        <!-- Danh sách thành viên -->
+        <section id="members" class="members-section">
+            <h2 class="section-title">Danh Sách Thành Viên (56)</h2>
+            <div class="table-container">
+                <table class="member-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 50px;">STT</th>
+                            <th>Họ và tên</th>
+                            <th>Chi hội</th>
+                            <th>Số điện thoại</th>
+                            <th>Chức vụ</th>
+                        </tr>
+                    </thead>
+                    <tbody id="memberTableBody"></tbody>
+                </table>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Liên Hệ Ban Liên Lạc</h2>
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <h3>Thông Tin Liên Hệ</h3>
+                    <p><strong>Hội trưởng:</strong> Nguyễn Ngọc Sơn - 0984.148.333</p>
+                    <p><strong>Thủ quỹ:</strong> Dương Hữu Anh - 0936.876.686</p>
+                    <p><strong>Email:</strong> banlienlac@quyhoi.com</p>
+                </div>
+                <div class="contact-info-card">
+                    <h3>Thông Tin Chuyển Khoản (Quỹ Hội)</h3>
+                    <p><strong>Ngân hàng:</strong> Agribank</p>
+                    <p><strong>Số tài khoản:</strong> 2607215000053</p>
+                    <p><strong>Chủ tài khoản:</strong> DUONG HUU ANH</p>
+                    <p><strong>Nội dung CK:</strong> [Họ Tên] - [SĐT] - Dong quy Quy Hoi</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Hội Đồng Niên Quý Hợi 1983. Mọi bản quyền được bảo lưu.</p>
+        <p>Liên hệ Ban Liên Lạc: <a href="mailto:banlienlac@quyhoi.com" rel="nofollow" style="color:var(--secondary-color);">banlienlac@quyhoi.com</a></p>		
+    </footer>
+    <!-- Cửa sổ nổi hiển thị ảnh/video (Modal) -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div class="modal-content" id="modalImages"></div>
     </div>
     <script>
-      // These are te default settings.
-      $('#slides').slideshow({
-        randomize: false,      // Randomize the play order of the slides.
-        slideDuration: 9000,  // Duration of each induvidual slide.
-        fadeDuration: 1000,    // Duration of the fading transition. Should be shorter than slideDuration.
-        animate: true,        // Turn css animations on or off.
-        pauseOnTabBlur: false, // Pause the slideshow when the tab is out of focus. This prevents glitches with setTimeout().
-        enableLog: false      // Enable log messages to the console. Useful for debugging.
-      });
+        function toggleMenu() {
+            if (window.innerWidth <= 768) {
+                document.getElementById('navLinks').classList.toggle('active');
+            }
+        }
+
+        // ĐIỀN DỮ LIỆU SỰ KIỆN TỪ FILE JS
+        const eventsGrid = document.getElementById("eventsGrid");
+        const visibleCount = 8; // Mặc định hiện 8 sự kiện mới nhất
+        
+        if (typeof eventsData !== 'undefined' && Array.isArray(eventsData)) {
+            eventsGrid.innerHTML = ''; 
+            eventsData.forEach((ev, index) => {
+                const title = ev.title || "Sự kiện Hội Quý Hợi";
+                const category = ev.category || "Hoạt động";
+                
+                // Đổi style nếu là Chúc thọ để phân biệt rõ ràng
+                const tagClass = category.includes("Chúc thọ") ? "tag-chuctho" : "tag-hoatdong";
+                
+                const imgCount = (ev.gallery && ev.gallery.length > 0) 
+                                 ? `<p style="font-size: 0.95rem; color: #555;">📸 Có <strong>${ev.gallery.length}</strong> hình ảnh (Click để xem)</p>` 
+                                 : `<p style="font-size: 0.95rem; color: #999;">Chưa cập nhật ảnh</p>`;
+
+                eventsGrid.innerHTML += `
+                    <div class="event-card ${index < visibleCount ? 'visible' : 'hidden'}" onclick="openGallery('${ev.id}')">
+                        <span class="event-tag ${tagClass}">${category}</span>
+                        <h3>${title}</h3>
+                        ${imgCount}
+                    </div>
+                `;
+            });
+        }
+
+        // TẢI ẢNH TỪNG PHẦN (LAZY LOADING) VÀ PHÁT VIDEO
+        function openGallery(eventId) {
+            const modalImages = document.getElementById("modalImages");
+            modalImages.innerHTML = ''; 
+            const eventObj = eventsData.find(e => e.id === eventId);
+            
+            if (eventObj && eventObj.gallery && eventObj.gallery.length > 0) {
+                eventObj.gallery.forEach(item => {
+                    let el;
+                    if (item.type === 'image') {
+                        el = document.createElement('img');
+                        el.setAttribute('loading', 'lazy'); 
+                        el.src = item.src;
+                        el.style.opacity = '0';
+                        el.onload = () => { el.style.opacity = '1'; el.style.transition = 'opacity 0.5s ease-in'; };
+                    } else if (item.type === 'youtube' || item.type === 'mp4') {
+                        el = document.createElement('iframe');
+                        el.setAttribute('loading', 'lazy'); 
+                        el.src = item.src;
+                        el.setAttribute('allowfullscreen', 'true');
+                        el.style.border = "none";
+                    }
+                    if (el) modalImages.appendChild(el);
+                });
+            } else {
+                modalImages.innerHTML = '<h3 style="color:white; text-align:center; grid-column: 1/-1;">Đang cập nhật hình ảnh và video...</h3>';
+            }
+            document.getElementById("imageModal").style.display = "block";
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+            document.body.style.overflow = "auto";
+            document.getElementById("modalImages").innerHTML = ''; 
+        }
+        window.onclick = function(e) { if (e.target == document.getElementById("imageModal")) closeModal(); }
+
+        // ẨN/HIỆN THÊM SỰ KIỆN CÓ HIỆU ỨNG FADE-IN
+        let isExpanded = false;
+        function toggleEvents() {
+            isExpanded = !isExpanded;
+            const cards = document.querySelectorAll('.event-card.hidden');
+            cards.forEach((c, i) => {
+                if (isExpanded) {
+                    c.style.display = 'block';
+                    setTimeout(() => { c.style.opacity = '1'; }, i * 50); // Hiện từ từ từng thẻ một
+                } else {
+                    c.style.opacity = '0';
+                    setTimeout(() => { c.style.display = 'none'; }, 300);
+                }
+            });
+            document.getElementById('toggleEventsBtn').innerText = isExpanded ? 'Thu gọn lịch sử' : 'Xem thêm các năm trước';
+            if (!isExpanded) document.getElementById('events').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // DANH SÁCH THÀNH VIÊN
+        const membersDataList = [
+            ["NGUYỄN NGỌC SƠN", "LT Bắc", "0984.148.333", "Hội trưởng"],
+            ["NGUYỄN NGỌC THẮNG", "LT Bắc", "0986.251.239", ""],
+            ["NGUYỄN VŨ TÙNG", "LT Bắc", "0976.187.983", ""],
+            ["VŨ XUÂN TĨNH", "LT Bắc", "0399.154.044", ""],
+            ["XUÂN HUY HOÀNG", "LT Bắc", "0987.490.163", "Tổ trưởng"],
+            ["ĐỖ XUÂN TIẾN", "LT Bắc", "0984.837.883", ""],
+            ["THẾ MẠNH HUY", "LT Bắc", "01282.243.828", ""],
+            ["NGUYỄN VIẾT PHONG", "LT Bắc", "0904.220.040", ""],
+            ["NGUYỄN VĂN THÀNH", "LT Bắc", "0973.882.278", ""],
+            ["DƯƠNG XUÂN HOÀNG", "LT Bắc", "0977.966.224", ""],
+            ["VŨ XUÂN MẠNH", "LT Bắc", "0984.083.875", ""],
+            ["NGUYỄN ĐĂNG BÌNH", "LT Bắc", "0982.637.683", ""],
+            ["NGUYỄN THÀNH TUẤN", "LT Bắc", "0986.899.299", ""],
+            ["DƯƠNG ĐÌNH KHÁNH", "LT Nam", "0904.430.551", "Tổ trưởng"],
+            ["BÙI MINH TUÂN", "LT Nam", "0969.617.967", ""],
+            ["NGUYỄN ĐỨC HỢI", "LT Nam", "0988.569.901", ""],
+            ["NGUYỄN THẾ NAM", "LT Nam", "0904.485.162", ""],
+            ["KHÚC ĐÌNH HỢP", "LT Nam", "0376.656.933", ""],
+            ["NGUYỄN THẾ MẠNH", "LT Nam", "0919.585.939", ""],
+            ["ĐỖ ĐÌNH CHÍNH", "LT Nam", "0386.389.451", ""],
+            ["NGUYỄN NGỌC TÚ", "LT Nam", "0388.033.845", ""],
+            ["NGUYỄN THẾ QUYẾT", "LT Nam", "0394.586.419", ""],
+            ["DƯƠNG HỮU ANH", "LT Nam", "0936.876.686", "Thủ quỹ"],
+            ["DƯƠNG HỮU TÁM", "LT Nam", "0976.033.103", ""],
+            ["NGUYỄN VĂN TUẤN", "LT Nam", "0366.767.626", ""],
+            ["NGUYỄN THẾ TOÀN", "LT Nam", "0946.337.123", ""],
+            ["HÀ VĂN SỨC", "LT Nam", "0984.574.301", ""],
+            ["ĐỖ MẠNH HUY", "LT Nam", "0966.732.783", "Pháp sư"],
+            ["NGUYỄN HỮU CƯỜNG", "LT Nam", "0854.448.188", ""],
+            ["DƯƠNG HỮU NGỌC", "LT Nam", "0966.711.638", ""],
+            ["NGUYỄN XUÂN DIỆU", "LT Nam", "0984.822.869", ""],
+            ["NGUYỄN VIỆT TIỆP", "LT Nam", "0969.104.104", ""],
+            ["NGUYỄN QUANG THẮNG", "LT Nam", "0913.665.664", ""],
+            ["NGUYỄN VĂN TIẾN", "LT Nam", "0977.188.248", ""],
+            ["DƯƠNG HỮU HƯNG", "LT Nam", "0387.974.083", ""],
+            ["NGUYỄN QUANG THẮNG", "Phố Hồ", "0936.729.038", "Tổ trưởng"],
+            ["TRỌNG ANH TRANG", "Phố Hồ", "0983.138.006", ""],
+            ["NGUYỄN PHÚ QUÝ", "Phố Hồ", "0988.807.129", ""],
+            ["NGUYỄN QUANG DŨNG", "Phố Hồ", "0388.210.125", ""],
+            ["NGUYỄN NHO TIẾN", "Phố Hồ", "0988.669.989", ""],
+            ["NGÔ XUÂN CƯỜNG", "Phố Hồ", "0984.435.236", ""],
+            ["NGUYỄN TÁ HỢI", "Phố Hồ", "0989.517.027", ""],
+            ["NGUYỄN THẾ TIẾN", "Phố Hồ", "01225.368.221", ""],
+            ["DƯƠNG XUÂN CÔNG", "Phố Hồ", "0979.581.476", ""],
+            ["DƯƠNG ĐÌNH DŨNG", "Phố Hồ", "0989.333.108", ""],
+            ["DƯƠNG TRỌNG TUẤN", "Phố Hồ", "0985.828.107", ""],
+            ["ĐỖ ANH TUẤN", "Phố Hồ", "0968.901.783", ""],
+            ["NGUYỄN THÀNH NGÂN", "Phố Hồ", "0963.190.338", ""],
+            ["HỒ MINH THẮNG", "Phố Hồ", "0973.918.686", ""],
+            ["TRẦN VĂN QUÝ", "Bến Hồ", "0395.997.488", "Tổ trưởng"],
+            ["NGÔ VĂN ĐÔNG", "Bến Hồ", "0384.117.431", ""],
+            ["LƯƠNG GIA ĐOÀN", "Bến Hồ", "0352.846.999", ""],
+            ["NGUYỄN VĂN NINH", "Bến Hồ", "0345.039.888", ""],
+            ["NGUYỄN VĂN CÔNG", "Bến Hồ", "0356.366.895", ""],
+            ["NGUYỄN ĐĂNG CÔNG", "Bến Hồ", "0981.025.321", ""],
+            ["NGUYỄN NGỌC LỢI", "Bến Hồ", "0961.133.134", ""]
+        ];
+
+        const tbody = document.getElementById("memberTableBody");
+        membersDataList.forEach((member, index) => {
+            const roleHtml = member[3] ? `<span class="role-badge">${member[3]}</span>` : "";
+            tbody.innerHTML += `<tr><td>${index + 1}</td><td><strong>${member[0]}</strong></td><td>${member[1]}</td><td>${member[2]}</td><td>${roleHtml}</td></tr>`;
+        });
+
+        // ĐẾM NGƯỢC
+        const countDownDate = new Date("Sep 18, 2026 00:00:00").getTime();
+        const x = setInterval(function() {
+            const distance = countDownDate - new Date().getTime();
+            document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24)).toString().padStart(2, '0');
+            document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)).toString().padStart(2, '0');
+            document.getElementById("mins").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)).toString().padStart(2, '0');
+            document.getElementById("secs").innerText = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, '0');
+            if (distance < 0) { clearInterval(x); document.getElementById("countdown").innerHTML = "<h3>Sự kiện đang diễn ra!</h3>"; }
+        }, 1000);
     </script>
-<div class="preloader"></div>  	
-<div class="content_bg"></div>
-<script type="text/javascript" src="/static/javascript/modules.js"></script>
-<script type="text/javascript" src="/static/javascript/default.js"></script>
 </body>
 </html>

@@ -1,88 +1,190 @@
 <!DOCTYPE html>
-<html lang="vi-VN">
+<html lang="vi">
 <head>
-<title>404 Error</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="Keywords" content="Quy hoi, Hoi dong nien quy hoi, Lang lac tho, Quy hoi 1983, Hoi dong nien 1983">
-<meta name="Description" content="Hoi dong nien quy hoi 1983.">
-<link rel="canonical" href="https://quyhoi.com" />
-<meta property="og:image" content="https://quyhoi.com/static/images/about.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="460">
-<meta property="og:image:height" content="406">
-<meta property="og:description" content="Hoi dong nien quy hoi 1983.">
-<link rel="icon" href="https://quyhoi.com/static/images/favico.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="https://quyhoi.com/static/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://quyhoi.com/static/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://quyhoi.com/static/images/favicon-16x16.png">
-<link rel="manifest" href="https://quyhoi.com/site.webmanifest">
-<link rel="mask-icon" href="https://quyhoi.com/safari-pinned-tab.svg" color="#04aa6d">
-<meta name="msapplication-TileColor" content="#00a300">
-<meta name="theme-color" content="#ffffff">
-<link rel="stylesheet" href="https://quyhoi.com/static/stylesheets/default.css?v=1.0">
-<link rel="stylesheet" href="https://quyhoi.com/static/stylesheets/responsive.css?v=1.0">
-<link rel="stylesheet" href="https://quyhoi.com/static/stylesheets/custom.css?v=1.0">
-<script type="text/javascript" src="https://quyhoi.com/static/javascript/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Không Tìm Thấy Trang | Hội Đồng Niên Quý Hợi 1983</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary-color: #8B0000; --secondary-color: #DAA520; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 10px 5%;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        header img { height: 60px; width: auto; }
+
+        .error-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* Số 404 cực đại với hiệu ứng nổi bật */
+        .error-code {
+            font-family: 'Merriweather', serif;
+            font-size: 10rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            line-height: 1;
+            position: relative;
+            opacity: 0;
+            animation: fadeSlideDown 0.8s ease forwards;
+        }
+
+        /* Đường gạch vàng kim bên dưới chữ 404 */
+        .error-code::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: var(--secondary-color);
+            margin: 15px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Logo con lợn SVG minh họa nhỏ */
+        .logo-404 {
+            margin: 30px 0 20px;
+            opacity: 0;
+            animation: fadeSlideDown 0.8s ease 0.3s forwards;
+        }
+        .logo-404 img, .logo-404 object {
+            height: 120px;
+            width: auto;
+            filter: drop-shadow(0 4px 8px rgba(139,0,0,0.2));
+        }
+
+        .error-title {
+            font-family: 'Merriweather', serif;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            opacity: 0;
+            animation: fadeSlideDown 0.8s ease 0.5s forwards;
+        }
+
+        .error-desc {
+            font-size: 1.05rem;
+            color: #666;
+            max-width: 480px;
+            margin-bottom: 35px;
+            line-height: 1.7;
+            opacity: 0;
+            animation: fadeSlideDown 0.8s ease 0.7s forwards;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            opacity: 0;
+            animation: fadeSlideDown 0.8s ease 0.9s forwards;
+        }
+
+        .btn-home {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 14px 35px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 12px rgba(139,0,0,0.25);
+        }
+        .btn-home:hover { background-color: #6b0000; transform: translateY(-2px); }
+
+        .btn-back {
+            background-color: white;
+            color: var(--primary-color);
+            padding: 14px 35px;
+            border: 2px solid var(--primary-color);
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .btn-back:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 18px;
+            font-size: 0.9rem;
+        }
+        footer a { color: var(--secondary-color); text-decoration: none; }
+
+        @keyframes fadeSlideDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 480px) {
+            .error-code { font-size: 6rem; }
+            .error-title { font-size: 1.4rem; }
+        }
+    </style>
 </head>
 <body>
-	<header class="main_header">
-        <div class="header_wrapper">
-        	<div class="logo_sect">
-                <a href="/" class="logo"><img src="https://quyhoi.com/static/images/logo.png" alt="Hội đồng niên Quý Hợi" class="logo_def"><img src="https://quyhoi.com/static/images/retina/logo.png" alt="Hội đồng niên Quý Hợi" class="logo_retina"></a>
-            </div>                       
-            <div class="header_rp">
-                <nav>
-                    <div class="menu-main-menu-container">
-                    	<ul id="menu-main-menu" class="menu">
-                        	<li class="current-menu-parent menu-item-has-children">
-                            	<a href="https://quyhoi.com/"><span>Home</span></a>                          
-                            </li>
-                            <li class="menu-item-has-children">
-                            	<a href="https://quyhoi.com/gallery.html"><span>Gallery</span></a>                         
-                            </li>
-                            <li class="menu-item-has-children">
-                            	<a href="javascript:void(0);"><span>Blog</span></a>
-                                        <ul class="sub-menu">
-                                            <li><a href="https://quyhoi.com/hoat-dong.html"><span>Hoạt động</span></a></li>
-                                            <li><a href="https://quyhoi.com/chuc-tho.html"><span>Chúc thọ</span></a></li>
-                                        </ul>								
-                            </li>
-                            <li class="menu-item-has-children">
-                            	<a href="https://quyhoi.com/member.html"><span>Member</span></a>                                
-                            </li>								
-                            <li class="menu-item-has-children">
-                            	<a href="https://quyhoi.com/about.html"><span>About</span></a>                                
-                            </li>
-                            <li class="menu-item-has-children">
-                            	<a href="https://quyhoi.com/contacts.html"><span>Contact</span></a>
-                            </li>                        
-                        </ul>
-                    </div>
-                </nav>
-			</div>
-            <div class="clear"></div>
+
+    <header>
+        <img src="static/images/logo_optimized.webp" alt="Logo Hội Quý Hợi 1983">
+    </header>
+
+    <div class="error-container">
+
+        <div class="error-code">404</div>
+
+        <div class="logo-404">
+            <img src="static/images/logo_optimized.webp" alt="Hội Quý Hợi 1983">
         </div>
-    </header>   
-    <div class="wrapper404">
-        <div class="container404">
-        	<h1 class="title404">404 Error</h1>
-            <div class="clear"></div>
-        </div>        
+
+        <h1 class="error-title">Trang Không Tìm Thấy</h1>
+
+        <p class="error-desc">
+            Trang bạn đang tìm kiếm có thể đã bị di chuyển, xóa, hoặc đường dẫn bạn nhập vào không chính xác.<br>
+            Hãy quay về trang chủ để xem các hoạt động mới nhất của Hội Đồng Niên Quý Hợi 1983.
+        </p>
+
+        <div class="btn-group">
+            <a href="index.html" class="btn-home">🏠 Về Trang Chủ</a>
+            <a href="javascript:history.back()" class="btn-back">← Quay Lại</a>
+        </div>
+
     </div>
-    <div class="custom_bg img_bg bg1"></div>	       
-	<div class="content_bg"></div>
-    <script type="text/javascript" src="https://quyhoi.com/static/javascript/modules.js?v=1.0"></script>
-	<script type="text/javascript" src="https://quyhoi.com/static/javascript/default.js?v=1.0"></script> 
-    <script>
-		jQuery(document).ready(function(){
-			"use strict";
-			jQuery('.wrapper404').css('margin-top', -1*(jQuery('.wrapper404').height()/2)+(jQuery('header.main_header').height()-30)/2);
-		});
-		jQuery(window).resize(function(){
-			"use strict";
-			jQuery('.wrapper404').css('margin-top', -1*(jQuery('.wrapper404').height()/2)+(jQuery('header.main_header').height()-30)/2);
-		});
-	</script>
+
+    <footer>
+        <p>&copy; 2026 Hội Đồng Niên Quý Hợi 1983 &nbsp;|&nbsp;
+           <a href="mailto:banlienlac@quyhoi.com" rel="nofollow">banlienlac@quyhoi.com</a>
+        </p>
+    </footer>
+
 </body>
 </html>
