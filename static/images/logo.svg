@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <!-- Background -->
+  <circle cx="250" cy="250" r="240" fill="#0A2540" stroke="#D4AF37" stroke-width="10"/>
+  <circle cx="250" cy="250" r="225" fill="none" stroke="#D4AF37" stroke-width="3" stroke-dasharray="10 5"/>
+
+  <!-- Text: Hội Đồng Niên -->
+  <path id="text-path-top" d="M 100,250 A 150,150 0 0,1 400,250" fill="none" />
+  <text fill="#D4AF37" font-family="Arial, sans-serif" font-size="36" font-weight="bold" letter-spacing="3">
+    <textPath href="#text-path-top" startOffset="50%" text-anchor="middle">HỘI ĐỒNG NIÊN</textPath>
+  </text>
+
+  <!-- Text: Quý Hợi -->
+  <path id="text-path-bottom" d="M 400,260 A 150,150 0 0,1 100,260" fill="none" />
+  <text fill="#D4AF37" font-family="Arial, sans-serif" font-size="40" font-weight="bold" letter-spacing="5">
+    <textPath href="#text-path-bottom" startOffset="50%" text-anchor="middle">QUÝ HỢI</textPath>
+  </text>
+
+  <!-- Year 1983 -->
+  <text x="250" y="380" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" letter-spacing="8">1983</text>
+
+  <!-- Abstract Pig/Water Symbol (Đại Hải Thủy) -->
+  <g transform="translate(250, 220) scale(1.5)">
+    <!-- Water Waves -->
+    <path d="M-60,20 Q-30,-10 0,20 T60,20" fill="none" stroke="#4DB8FF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M-40,40 Q-20,20 0,40 T40,40" fill="none" stroke="#4DB8FF" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- Stylized Pig Head/Body using geometric shapes -->
+    <path d="M-30,-20 C-30,-50 30,-50 30,-20 C30,10 -30,10 -30,-20 Z" fill="#D4AF37"/>
+    <!-- Ears -->
+    <path d="M-25,-40 L-40,-55 L-15,-45 Z" fill="#D4AF37"/>
+    <path d="M25,-40 L40,-55 L15,-45 Z" fill="#D4AF37"/>
+    <!-- Snout -->
+    <ellipse cx="0" cy="-15" rx="12" ry="8" fill="#0A2540"/>
+    <circle cx="-5" cy="-15" r="2" fill="#D4AF37"/>
+    <circle cx="5" cy="-15" r="2" fill="#D4AF37"/>
+  </g>
+
+  <!-- Decorative Stars -->
+  <path d="M 120,250 L 130,240 L 140,250 L 130,260 Z" fill="#D4AF37"/>
+  <path d="M 360,250 L 370,240 L 380,250 L 370,260 Z" fill="#D4AF37"/>
+</svg>
