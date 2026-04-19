@@ -162,10 +162,6 @@
 
         <div class="error-code">404</div>
 
-        <div class="logo-404">
-            <img src="static/images/logo.svg" alt="Hội Quý Hợi 1983">
-        </div>
-
         <h1 class="error-title">Trang Không Tìm Thấy</h1>
 
         <p class="error-desc">
