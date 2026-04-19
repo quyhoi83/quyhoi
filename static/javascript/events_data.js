@@ -6,7 +6,7 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2026.jpg"
+                "src": "/static/uploads/tiet-xuan-2026.webp"
             }
         ],
         "category": "Hoạt động",
@@ -19,71 +19,71 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-9.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-9.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-3.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-3.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-4.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-4.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-5.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-5.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-6.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-6.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-7.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-7.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-8.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-8.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-2.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-2.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-10.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-10.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-11.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-11.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-12.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-12.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-13.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-13.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-14.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-14.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-15.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-15.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-16.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-16.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2026-17.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2026-17.webp"
             }
         ],
         "category": "Chúc thọ",
@@ -96,7 +96,7 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-thu-2025.jpg"
+                "src": "/static/uploads/tiet-thu-2025.webp"
             }
         ],
         "category": "Hoạt động",
@@ -109,43 +109,43 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2025.jpg"
+                "src": "/static/uploads/tiet-xuan-2025.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2025-10.jpg"
+                "src": "/static/uploads/tiet-xuan-2025-10.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2025-2.jpg"
+                "src": "/static/uploads/tiet-xuan-2025-2.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2025-3.jpg"
+                "src": "/static/uploads/tiet-xuan-2025-3.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2025-4.jpg"
+                "src": "/static/uploads/tiet-xuan-2025-4.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2025-5.jpg"
+                "src": "/static/uploads/tiet-xuan-2025-5.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2025-6.jpg"
+                "src": "/static/uploads/tiet-xuan-2025-6.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2025-8.jpg"
+                "src": "/static/uploads/tiet-xuan-2025-8.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2025-9.jpg"
+                "src": "/static/uploads/tiet-xuan-2025-9.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2025-7.jpg"
+                "src": "/static/uploads/tiet-xuan-2025-7.webp"
             },
             {
                 "type": "youtube",
@@ -162,31 +162,31 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2025.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2025.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2025-2.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2025-2.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2025-3.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2025-3.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2025-4.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2025-4.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2025-5.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2025-5.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2025-6.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2025-6.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2025-7.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2025-7.webp"
             }
         ],
         "category": "Chúc thọ",
@@ -199,7 +199,7 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-thu-2024.jpg"
+                "src": "/static/uploads/tiet-thu-2024.webp"
             }
         ],
         "category": "Hoạt động",
@@ -212,7 +212,7 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2024.jpg"
+                "src": "/static/uploads/tiet-xuan-2024.webp"
             }
         ],
         "category": "Hoạt động",
@@ -225,35 +225,35 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2024.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2024.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2024-2.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2024-2.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2024-3.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2024-3.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2024-4.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2024-4.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2024-5.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2024-5.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2024-6.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2024-6.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2024-7.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2024-7.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2024-8.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2024-8.webp"
             }
         ],
         "category": "Chúc thọ",
@@ -266,11 +266,11 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-thu-2023.jpg"
+                "src": "/static/uploads/tiet-thu-2023.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-thu-2023-2.jpg"
+                "src": "/static/uploads/tiet-thu-2023-2.webp"
             }
         ],
         "category": "Hoạt động",
@@ -283,31 +283,31 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2023.jpg"
+                "src": "/static/uploads/tiet-xuan-2023.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2023-2.jpg"
+                "src": "/static/uploads/tiet-xuan-2023-2.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2023-3.jpg"
+                "src": "/static/uploads/tiet-xuan-2023-3.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2023-4.jpg"
+                "src": "/static/uploads/tiet-xuan-2023-4.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2023-5.jpg"
+                "src": "/static/uploads/tiet-xuan-2023-5.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2023-6.jpg"
+                "src": "/static/uploads/tiet-xuan-2023-6.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2023-7.jpg"
+                "src": "/static/uploads/tiet-xuan-2023-7.webp"
             },
             {
                 "type": "youtube",
@@ -332,23 +332,23 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2023.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2023.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2023-2.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2023-2.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2023-3.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2023-3.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2023-4.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2023-4.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2023-5.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2023-5.webp"
             }
         ],
         "category": "Chúc thọ",
@@ -361,11 +361,11 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-thu-2022.jpg"
+                "src": "/static/uploads/tiet-thu-2022.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-thu-2022-2.jpg"
+                "src": "/static/uploads/tiet-thu-2022-2.webp"
             }
         ],
         "category": "Hoạt động",
@@ -378,39 +378,39 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2022.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2022.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2022-2.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2022-2.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2022-3.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2022-3.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2022-4.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2022-4.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2022-5.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2022-5.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2022-6.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2022-6.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2022-7.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2022-7.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2022-8.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2022-8.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2022-9.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2022-9.webp"
             }
         ],
         "category": "Chúc thọ",
@@ -423,23 +423,23 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2021.jpg"
+                "src": "/static/uploads/tiet-xuan-2021.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2021-2.jpg"
+                "src": "/static/uploads/tiet-xuan-2021-2.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2021-3.jpg"
+                "src": "/static/uploads/tiet-xuan-2021-3.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2021-4.jpg"
+                "src": "/static/uploads/tiet-xuan-2021-4.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2021-5.jpg"
+                "src": "/static/uploads/tiet-xuan-2021-5.webp"
             }
         ],
         "category": "Hoạt động",
@@ -452,27 +452,27 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2021.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2021.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2021-2.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2021-2.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2021-4.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2021-4.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2021-5.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2021-5.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2021-3.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2021-3.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2021-6.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2021-6.webp"
             }
         ],
         "category": "Chúc thọ",
@@ -485,15 +485,15 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-thu-2020.jpg"
+                "src": "/static/uploads/tiet-thu-2020.webp"
             },
             {
                 "type": "image",
-                "src": "https://quyhoi.com/images/thu/2020/2.jpg"
+                "src": "/static/uploads/tiet-thu-2020-2.webp"
             },
             {
                 "type": "image",
-                "src": "https://quyhoi.com/images/thu/2020/3.jpg"
+                "src": "/static/uploads/tiet-thu-2020-3.webp"
             }
         ],
         "category": "Hoạt động",
@@ -502,31 +502,19 @@ const eventsData = [
     {
         "id": "hop-mat-xuan-2020",
         "title": "Họp mặt xuân 2020",
-        "desc": "Hoạt động có 6 ảnh/video.",
+        "desc": "Hoạt động có 3 ảnh/video.",
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2020.jpg"
+                "src": "/static/uploads/tiet-xuan-2020.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2020-2.jpg"
+                "src": "/static/uploads/tiet-xuan-2020-2.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2020-3.jpg"
-            },
-            {
-                "type": "image",
-                "src": "/static/uploads/tiet-xuan-2020-4.jpg"
-            },
-            {
-                "type": "image",
-                "src": "/static/uploads/tiet-xuan-2020-5.jpg"
-            },
-            {
-                "type": "image",
-                "src": "/static/uploads/tiet-xuan-2020-6.jpg"
+                "src": "/static/uploads/tiet-xuan-2020-3.webp"
             }
         ],
         "category": "Hoạt động",
@@ -539,19 +527,19 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2020.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2020.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2020-2.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2020-2.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2020-3.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2020-3.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2020-4.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2020-4.webp"
             }
         ],
         "category": "Chúc thọ",
@@ -564,11 +552,11 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-thu-2019.jpg"
+                "src": "/static/uploads/tiet-thu-2019.webp"
             },
             {
                 "type": "image",
-                "src": "https://quyhoi.com/images/thu/2019/2.jpg"
+                "src": "/static/uploads/tiet-thu-2019-2.webp"
             }
         ],
         "category": "Hoạt động",
@@ -581,27 +569,27 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2019.jpg"
+                "src": "/static/uploads/tiet-xuan-2019.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2019-2.jpg"
+                "src": "/static/uploads/tiet-xuan-2019-2.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2019-3.jpg"
+                "src": "/static/uploads/tiet-xuan-2019-3.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2019-4.jpg"
+                "src": "/static/uploads/tiet-xuan-2019-4.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2019-5.jpg"
+                "src": "/static/uploads/tiet-xuan-2019-5.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2019-6.jpg"
+                "src": "/static/uploads/tiet-xuan-2019-6.webp"
             }
         ],
         "category": "Hoạt động",
@@ -614,11 +602,11 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2019.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2019.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2019-2.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2019-2.webp"
             }
         ],
         "category": "Chúc thọ",
@@ -631,11 +619,11 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-thu-2018.jpg"
+                "src": "/static/uploads/tiet-thu-2018.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-thu-2018-2.jpg"
+                "src": "/static/uploads/tiet-thu-2018-2.webp"
             },
             {
                 "type": "youtube",
@@ -652,31 +640,31 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2018.jpg"
+                "src": "/static/uploads/tiet-xuan-2018.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2018-2.jpg"
+                "src": "/static/uploads/tiet-xuan-2018-2.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2018-3.jpg"
+                "src": "/static/uploads/tiet-xuan-2018-3.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2018-4.jpg"
+                "src": "/static/uploads/tiet-xuan-2018-4.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2018-5.jpg"
+                "src": "/static/uploads/tiet-xuan-2018-5.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2018-6.jpg"
+                "src": "/static/uploads/tiet-xuan-2018-6.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2018-7.jpg"
+                "src": "/static/uploads/tiet-xuan-2018-7.webp"
             },
             {
                 "type": "youtube",
@@ -697,7 +685,7 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2017.jpg"
+                "src": "/static/uploads/tiet-xuan-2017.webp"
             },
             {
                 "type": "youtube",
@@ -718,11 +706,11 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2017.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2017.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/chuc-tho-bo-me-2017-2.jpg"
+                "src": "/static/uploads/chuc-tho-bo-me-2017-2.webp"
             },
             {
                 "type": "youtube",
@@ -739,19 +727,19 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-thu-2016.jpg"
+                "src": "/static/uploads/tiet-thu-2016.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-thu-2016-2.jpg"
+                "src": "/static/uploads/tiet-thu-2016-2.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-thu-2016-3.jpg"
+                "src": "/static/uploads/tiet-thu-2016-3.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-thu-2016-4.jpg"
+                "src": "/static/uploads/tiet-thu-2016-4.webp"
             }
         ],
         "category": "Hoạt động",
@@ -764,19 +752,19 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2016.jpg"
+                "src": "/static/uploads/tiet-xuan-2016.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2016-2.jpg"
+                "src": "/static/uploads/tiet-xuan-2016-2.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2016-3.jpg"
+                "src": "/static/uploads/tiet-xuan-2016-3.webp"
             },
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2016-4.jpg"
+                "src": "/static/uploads/tiet-xuan-2016-4.webp"
             }
         ],
         "category": "Hoạt động",
@@ -789,7 +777,7 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2015.jpg"
+                "src": "/static/uploads/tiet-xuan-2015.webp"
             }
         ],
         "category": "Hoạt động",
@@ -802,7 +790,7 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2014.jpg"
+                "src": "/static/uploads/tiet-xuan-2014.webp"
             }
         ],
         "category": "Hoạt động",
@@ -815,7 +803,7 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2013.jpg"
+                "src": "/static/uploads/tiet-xuan-2013.webp"
             }
         ],
         "category": "Hoạt động",
@@ -828,7 +816,7 @@ const eventsData = [
         "gallery": [
             {
                 "type": "image",
-                "src": "/static/uploads/tiet-xuan-2012.jpg"
+                "src": "/static/uploads/tiet-xuan-2012.webp"
             }
         ],
         "category": "Hoạt động",
