@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://quyhoi.com/sitemap.xml

@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hội Đồng Niên Quý Hợi 1983 - Kỷ Niệm Gắn Kết</title>
-    <meta name="description" content="Trang thông tin chính thức của Hội Đồng Niên Quý Hợi 1983. Nơi kết nối đam mê, chia sẻ yêu thương.">
+    <meta name="description" content="Trang thông tin chính thức Hội Đồng Niên Quý Hợi 1983 – Kết nối anh em sinh năm 1983 tại Bắc Ninh.">
     <meta property="og:title" content="Hội Đồng Niên Quý Hợi 1983 - Kỷ Niệm Gắn Kết">
     <meta property="og:description" content="Nơi lưu giữ những khoảnh khắc đẹp nhất của tuổi thanh xuân.">
-    <meta property="og:image" content="/static/uploads/tiet-xuan-2019.webp">
+    <meta property="og:image" content="https://quyhoi.com/static/uploads/tiet-xuan-2019.webp">
     <meta property="og:type" content="website">
-    <link rel="preload" as="image" href="/static/uploads/tiet-xuan-2026.webp">
-    <link rel="shortcut icon" href="/static/images/logo_flat_32.png">
+    <meta property="og:url" content="https://quyhoi.com/">
+    <meta property="og:site_name" content="Hội Đồng Niên Quý Hợi 1983">
+    <meta name="author" content="Hội Đồng Niên Quý Hợi 1983">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hội Đồng Niên Quý Hợi 1983">
+    <meta name="twitter:image" content="https://quyhoi.com/static/uploads/tiet-xuan-2019.webp">
+    <link rel="preload" as="image" href="https://quyhoi.com/static/uploads/tiet-xuan-2026.webp">
+    <link rel="canonical" href="https://quyhoi.com/">
+    <link rel="shortcut icon" href="https://quyhoi.com/static/images/logo_flat_32.png">
     <!-- Fonts: Be Vietnam Pro self-hosted -->
     <link rel="preload" href="/static/fonts/BeVietnamPro-Regular-vi.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/static/fonts/BeVietnamPro-Bold-vi.woff2" as="font" type="font/woff2" crossorigin>
     <style>
 /* Be Vietnam Pro — Self-hosted, tối ưu cho tiếng Việt */
+/* Upload toàn bộ thư mục static/fonts/ lên server */
 
 /* ── Weight 400 (Regular) ── */
 @font-face {
@@ -273,7 +281,7 @@
         .hero {
             min-height: 100vh;
             background: linear-gradient(to bottom, oklch(0.2 0.12 15 / 0.55), oklch(0.12 0.08 15 / 0.75)),
-                        url('/static/uploads/tiet-xuan-2026.webp') center/cover no-repeat;
+                        url('https://quyhoi.com/static/uploads/tiet-xuan-2026.webp') center/cover no-repeat;
             display: flex; flex-direction: column;
             justify-content: center; align-items: center;
             text-align: center;
@@ -608,14 +616,33 @@
         .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
         .reveal.visible { opacity: 1; transform: translateY(0); }
     </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Hội Đồng Niên Quý Hợi 1983",
+      "url": "https://quyhoi.com",
+      "logo": "https://quyhoi.com/static/images/logo.svg",
+      "description": "Hội Đồng Niên Quý Hợi 1983 – Kết nối anh em sinh năm 1983 tại Bắc Ninh.",
+      "foundingDate": "2012",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+84981025321",
+        "contactType": "customer service",
+        "areaServed": "VN",
+        "availableLanguage": "Vietnamese"
+      }
+    }
+    </script>
 </head>
 <body>
 <a href="#main" class="skip-link">Bỏ qua điều hướng</a>
 
 <header>
     <nav class="navbar" role="navigation" aria-label="Điều hướng chính">
-        <a href="#" class="logo" aria-label="Hội Quý Hợi 1983 - Trang chủ">
-            <img src="/static/images/logo.svg" alt="Logo Hội Đồng Niên Quý Hợi 1983" width="64" height="64" loading="eager">
+        <a href="#" class="logo" aria-label="Hội Đồng Niên Quý Hợi 1983 - Trang chủ">
+            <img src="https://quyhoi.com/static/images/logo.svg" alt="Logo Hội Đồng Niên Quý Hợi 1983" width="64" height="64" loading="eager">
             <div class="logo-text">
                 <span class="logo-title">Quý Hợi 1983</span>
                 <span class="logo-sub">Hội Đồng Niên</span>
@@ -840,8 +867,8 @@
     <img id="lightboxImg" src="" alt="">
 </div>
 
-<script src="/static/javascript/events_data.js" defer></script>
-<script src="/static/javascript/members_data.js" defer></script>
+<script src="https://quyhoi.com/static/javascript/events_data.js" defer></script>
+<script src="https://quyhoi.com/static/javascript/members_data.js" defer></script>
 <script>
 /* ===== MENU MOBILE ===== */
 const menuBtn = document.getElementById('menuBtn');
